@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>How to Control YouTube's Video Player with JavaScript</title>
+    <link rel="stylesheet" href="demo.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+
+<div id="video1-placeholder"></div>
+<div id="video2-placeholder"></div>
+
+
+<div id="controls">
+
+    <ul>
+        <li>
+            <h2>Duration</h2>
+            <p><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>
+        </li>
+
+        <li>
+            <h2>Progress Bar</h2>
+            <input type="range" id="progress-bar" value="0" min="0" max="10000">
+        </li>
+
+        <li>
+            <h2>Play</h2>
+            <i id="play" class="material-icons">play_arrow</i>
+        </li>
+
+        <li>
+            <h2>Pause</h2>
+            <i id="pause" class="material-icons">pause</i>
+        </li>
+    </ul>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
