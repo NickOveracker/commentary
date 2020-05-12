@@ -66,7 +66,8 @@ function onYouTubeIframeAPIReady() {
             playlist: '',
 			controls: 0,
 			cc_load_policy: 1,
-			rel: 0
+			rel: 0,
+			playsinline: 1
         },
         events: {
             onReady: initialize
@@ -81,7 +82,8 @@ function onYouTubeIframeAPIReady() {
             color: 'white',
             playlist: '',
 			controls: 0,
-			rel: 0
+			rel: 0,
+			playsinline: 1
         },
         events: {
             onReady: initialize
