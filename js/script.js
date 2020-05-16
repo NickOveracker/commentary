@@ -5,8 +5,22 @@ var dimX = 600;
 var dimY = 400;
 
 var switchPoints = [
-	{stopAt: 5, switchTo: 0},
-	{stopAt: 5, switchTo: 5},
+	{stopAt: 5, switchTo: 34.5}, // Mine
+	{stopAt: 36.5, switchTo: 5}, // Theirs
+	{stopAt: 10, switchTo: 36.5}, // Mine
+	{stopAt: 38, switchTo: 10}, // Theirs
+	{stopAt: 15, switchTo: 38}, // Mine
+	{stopAt: 41, switchTo: 15}, // Theirs
+	{stopAt: 20, switchTo: 41}, // Mine
+	{stopAt: 43, switchTo: 20}, // Theirs
+	{stopAt: 25, switchTo: 43}, // Mine
+	{stopAt: 46, switchTo: 25}, // Theirs
+	{stopAt: 30, switchTo: 46}, // Mine
+	{stopAt: 48.5, switchTo: 30}, // Theirs
+	{stopAt: 35, switchTo: 48.5}, // Mine
+	{stopAt: 50.5, switchTo: 35}, // Theirs
+	{stopAt: 40, switchTo: 221}, // Mine
+	{stopAt: 222.5, switchTo: 40}, // Theirs
 ];
 var switchIndex = 0;
 
@@ -60,10 +74,10 @@ function onYouTubeIframeAPIReady() {
     player1 = new YT.Player('video1-placeholder', {
         width: dimX,
         height: dimY,
-        videoId: 'X1l4duE9s14',
+        videoId: '',
         playerVars: {
             color: 'white',
-            playlist: '',
+            playlist: 'jJCq5p8HCZo',
 			controls: 0,
 			cc_load_policy: 1,
 			rel: 0,
@@ -77,7 +91,7 @@ function onYouTubeIframeAPIReady() {
 	player2 = new YT.Player('video2-placeholder', {
         width: 1,
         height: 1,
-        videoId: 'jJCq5p8HCZo',
+        videoId: 'X1l4duE9s14',
         playerVars: {
             color: 'white',
             playlist: '',
