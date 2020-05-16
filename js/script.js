@@ -256,5 +256,5 @@ var timeout = setTimeout(function(){
 			}
 			*/
 		}
-	},1000);
-},switchPoints[0] * 1000);
+	},50);
+},switchPoints[0] * 900);
